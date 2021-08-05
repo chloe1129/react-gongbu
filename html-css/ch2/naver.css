@@ -1,0 +1,21 @@
+/*선택자(selector)*/
+
+/*div는 생략 가능, 하지만 다른건 꼭 앞에 적어줘야함*/
+div#header-center {
+  margin: 0 auto;
+  width: 780px;
+}
+
+div#header-search > h1 {
+  width: 240px;
+  display: inline-block;
+}
+
+div#header-search > h2 {
+  display: none;
+}
+
+div#header-search fieldset {
+  width: 360px;
+  display: inline-block;
+}
