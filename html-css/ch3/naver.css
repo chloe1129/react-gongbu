@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+/* 별은 css에서 모든 태그에 적용되는것을 의미한다*/
+
+/*선택자(selector)*/
+
+/*div는 생략 가능, 하지만 다른건 꼭 앞에 적어줘야함*/
+div#header-center {
+  margin: 0 auto;
+  width: 780px;
+}
+
+div#header-search a {
+  text-decoration: none;
+}
+
+div#header-search h1 {
+  width: 198px;
+  height: 48px;
+  display: inline-block;
+  /*background-image: url(./sp_search.png);*/
+  /*background-position: -4px -10px;*/
+  /*text-indent: 10%;*/
+  /*overflow: hidden;*/
+  background: url(./sp_search.png) -4px -4px no-repeat;
+  vertical-align: middle;
+}
+
+div#header-search h1 span {
+  display: none;
+}
+
+div#header-search > h2 {
+  display: none;
+}
+
+div#header-search fieldset {
+  margin-left: 20px;
+
+  /*padding-top: 12px;
+  padding-bottom: 12px
+  padding-left: 10px;
+  padding-right: 0;*/
+  padding: 12px 0 12px 10px;
+  width: 360px;
+  height: 49px;
+  display: inline-block;
+  border: 2px solid #03cf5d; /*색의 hex 표기법 많이 쓴다/ RGB를 사용하기도함*/
+  vertical-align: middle;
+  /*box-sizing: border-box;*/
+}
+
+#header-search fieldset input {
+  border: none;
+  padding: 0;
+  outline: none;
+  vertical-align: middle;
+}
+
+#header-search fieldset button {
+  width: 49px;
+  height: 49px;
+  border: none;
+  padding: 0;
+  background: #03cf5d;
+}
+
+#search-image {
+  background-image: url(./sp_search.png);
+  background-position: -3px -60px;
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  margin: 14px;
+}
+
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
