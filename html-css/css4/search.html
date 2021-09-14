@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .frame{
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                width: 360px;
+                height: 341px;
+                margin-top: -200px;
+                margin-left: -200px;
+                border-radius: 8px;
+                box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+                background: white;
+            }
+            .initialize{
+                position: absolute;
+                width: 50px;
+                height: 21px;
+                left: 24px;
+                top: 26px;
+            }
+            #init{
+                font-family: Pretendard;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 21px;
+                text-align: center;
+                color: #3497F1;
+                background-color: white;
+                border: 0;
+                outline: 0; 
+            }
+            .title{
+                position: absolute;
+                margin: auto;
+                text-align: center;
+                width: 80px;
+                height: 22px;
+                left: calc(50% - 67px/2 + 0.5px);
+                top: 25px;
+                font-family: Pretendard;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+
+            }
+            .delete{
+                position: absolute;
+                right: 24px;
+                top: 26px;
+            }
+            #del{
+                color: #9FA6AD;
+                background-color: white;
+                border: 0;
+                outline: 0; 
+            }
+
+            .center{
+                position: absolute;
+                top: 87px;
+                left: calc(50% - 312px/2);
+                border-radius: 4px;
+                width: 312px;
+                height: 50px;
+                border: 1px solid #E3E5E7;
+                box-sizing: border-box;
+            }
+            input{
+                display: inline-block;
+                margin-top: 12px;
+                border: 0px;
+                outline: none;
+                border: none;
+                width: 52px;
+                height: 25px;
+                left: calc(50% - 52px/2 - 110px);
+                top: 100px;
+                padding: 0 10px;
+            }
+            #recommend{
+                margin-top: 1px;
+                position: absolute;
+                background: white;
+                padding: 0 10px;
+            }
+            .item {
+	            height: 1.8em;
+                width: 220px;
+                outline: none;
+            }
+
+            .item:hover {
+                color: #9baec8;
+            }
+            .text {
+                font-weight: bold;
+            }
+            .invisible {
+                display: none;
+            }
+            .okay{
+                position: absolute;
+                bottom: 36px;
+                left: 24px;
+                background: #0DC496;
+                border-radius: 24px;
+                width: 312px;
+                height: 48px;
+            }
+            #check{
+                position: absolute;
+                width: 44px;
+                height: 28px;
+                font-family: Pretendard;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 28px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                left: calc(50% - 44px/2);
+                top: calc(50% - 28px/2);
+                color: white;
+                background: #0DC496;
+                border: 0;
+                outline: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="frame">
+            <div class="initialize">
+                <button id="init">초기화</button>
+            </div>
+            <div class="title">
+                스킬 검색
+            </div>
+            <div class="delete">
+                <button id="del">X</button>
+            </div>
+            <div class="center">
+
+                <input type="text" placeholder="스킬검색"/>
+                <div id="recommend" class="invisible">
+                    <div class="item"><span class="text"></span></div>
+                    <div class="item">Java<span class="text"></span></div>
+                    <div class="item">Java script<span class="text"></span></div>
+                </div>
+            </div>
+            <div class="okay">
+                <button id="check">확인</button>
+            </div>
+        </div>
+    </body>
+</html>
